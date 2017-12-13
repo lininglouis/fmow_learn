@@ -10,6 +10,11 @@ import numpy as np
 from keras.optimizers import SGD
 from matplotlib import pyplot as plt
 from keras.optimizers import  Adam
+from keras.callbacks import History
+import keras.backend as K
+import  keras
+
+
 
 def getOutputShape(imageSide, kernel, padding,stride):
     return  (imageSide+2*padding-kernel)/stride + 1
@@ -40,9 +45,6 @@ def getModel():
     model.add(Dense(num_classes, activation='softmax'))
     return model
 
-from keras.callbacks import History
-import keras.backend as K
-import  keras
 
 
 class Recorder(keras.callbacks.Callback):
