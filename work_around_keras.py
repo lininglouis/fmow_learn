@@ -72,6 +72,26 @@ class Recorder(keras.callbacks.Callback):
         self.accs.append(logs.get('acc'))
 
 
+class CustomizedGenerator():
+
+    def __init__(self, setting):
+        self.batch_size = setting['batch_size']
+        self.setting = setting
+
+    def fit(self):
+        self.x_train = self.setting['x_train']
+        self.y_train = self.setting['y_train']
+
+    def generate(self):
+        batch_id =  np.arange(x_train.shape[0]) // self.batch_size
+        while True:
+            for cur_batch_id in np.random.permutation(batch_id):
+                batch_mask = batch_id[batch_id==cur_batch_id]
+                x_batch = x_train[batch_mask,:]
+                y_batch = y_train[batch_mask, :]
+                yield x_batch, y_batch
+
+
 
 
 # -------------------LOAD Data-------------------------------------------
@@ -108,60 +128,43 @@ model.compile(optimizer=opt, loss=loss, metrics=['accuracy'])
 
 
 
-class CustomizedGenerator():
 
-    def __init__(self, setting):
-        self.batch_size = setting['batch_size']
-        self.setting = setting
-
-    def fit(self):
-        self.x_train = self.setting['x_train']
-        self.y_train = self.setting['y_train']
-
-    def generate(self):
-        batch_id =  np.arange(x_train.shape[0]) // self.batch_size
-        while True:
-            for cur_batch_id in np.random.permutation(batch_id):
-                batch_mask = batch_id[batch_id==cur_batch_id]
-                x_batch = x_train[batch_mask,:]
-                y_batch = y_train[batch_mask, :]
-                yield x_batch, y_batch
-
-
-
-
-
-# Using  keras provided ImageDataGenerator
+# Using  keras provided ImageDataGenerator----------------------------------------------
 datagen = image.ImageDataGenerator(zca_whitening=True, horizontal_flip=True)
 datagen.fit(x_train)
 keras_generator = datagen.flow(x_train, y_train, batch_size=BATCH_SIZE, shuffle=True, seed=43)
 recorder_keras = Recorder()
 model.fit_generator(keras_generator, verbose=1, steps_per_epoch=nb_train_samples//BATCH_SIZE, callbacks=[recorder_keras])  #nb_train_samples//BATCH_SIZE,)
+
+# train record plot
+plt.plot(recorder_keras.losses)
+plt.plot(recorder_keras.accs)
+
+# test performance
 score = model.evaluate(x_test, y_test, batch_size=BATCH_SIZE, verbose=VERBOSE)
 test_score= score[0]
 test_acc = score[1]
 print ('accuracy: {0}'.format(test_acc))
-
-
-score = model.evaluate(x_test, y_test, batch_size=BATCH_SIZE, verbose=VERBOSE)
-test_score= score[0]
-test_acc = score[1]
-print ('accuracy: {0}'.format(test_acc))
+# Using  keras provided ImageDataGenerator   END----------------------------------------------
 
 
 
-
-#Using Customized  Generator
+#Using Customized  Generator--------------------------------------------------------
 mygen = CustomizedGenerator({'x_train':x_train, 'y_train':y_train, 'batch_size': 32})
 mygen.fit()
 generator = mygen.generate()
-recorder = Recorder()
-model.fit_generator(generator, verbose=1, steps_per_epoch=200, callbacks=[recorder])  #nb_train_samples//BATCH_SIZE,)
-plt.plot(recorder.losses)
-plt.plot(recorder.accs)
+recorder_cust = Recorder()
+model.fit_generator(generator, verbose=1, steps_per_epoch=200, callbacks=[recorder_cust])  #nb_train_samples//BATCH_SIZE,)
 
+# train record plot
+plt.plot(recorder_cust.losses)
+plt.plot(recorder_cust.accs)
 
-
-
+# test performance
+score = model.evaluate(x_test, y_test, batch_size=BATCH_SIZE, verbose=VERBOSE)
+test_score= score[0]
+test_acc = score[1]
+print ('accuracy: {0}'.format(test_acc))
+#Using Customized  Generator END--------------------------------------------------------
 
 
