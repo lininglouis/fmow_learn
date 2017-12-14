@@ -19,7 +19,7 @@ basemodel = VGG16(weights='imagenet', include_top=False, input_tensor=input_tens
 x = base_model.output   # same to   x=basemodel.layers[-1].output
 
 # use GlobalAvgPool to move Conv to vectors
-x = GlobalAveragePooling2D()(x)   # using GlobalAverage to avoid Flatten()
+x = GlobalAveragePooling2D()(x)   # using GlobalAverage;  avoid using Flatten(),since that will cause too many parameters that might not be that useful, compared with conv layer parameters
 
 #build your own fc 
 x = Dense(units=512, activation='relu', name='fc1')(x)
