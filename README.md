@@ -25,5 +25,5 @@ keras pytorch才能提高效率
 2.设计自己的东西跑模型，重复
 3.用pytorch并行多个模型
 4.去雾 remove haze
-
+https://flyyufelix.github.io/2016/10/11/kaggle-statefarm.html
 
