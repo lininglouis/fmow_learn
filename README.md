@@ -40,3 +40,6 @@ w += grad * lr<br>
 BP的理解关键<br>
 1.一个是矩阵求导是什么
 2.一个是链式反应
+
+为什么pytorch zero gradient
+为什么pytorch backward需要加参数
