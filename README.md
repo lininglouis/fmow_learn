@@ -27,3 +27,8 @@ keras pytorch才能提高效率
 4.去雾 remove haze
 https://flyyufelix.github.io/2016/10/11/kaggle-statefarm.html
 
+
+矩阵求导 只是实质求导在形式上的一种组合
+f(W) = loss.   loss 对W求导的结果，其实就是loss对w1求导得到g1, loss对w2求导得到g2, 然后把所有求导的结果组合起来G=[g1, g2, g3, ..]
+然后W += G \* learning rate. 就这样而已。
+也就是对矩阵求导 =  对矩阵中每个标量元素挨个求导，然后从新组成一个矩阵的形式的。
