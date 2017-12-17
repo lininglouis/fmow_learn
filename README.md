@@ -43,3 +43,4 @@ BP的理解关键<br>
 
 为什么pytorch zero gradient
 为什么pytorch backward需要加参数
+Every time a variable is back propogated through, the gradient will be accumulated instead of being replaced. (This makes it easier for rnn, because each module will be back propogated through several times.)
