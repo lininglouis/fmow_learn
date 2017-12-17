@@ -47,3 +47,9 @@ Every time a variable is back propogated through, the gradient will be accumulat
 为什么pytorch backward需要加参数<br>
 jacobian<br>
 
+
+填坑<br>
+deeplearning.ai code复习<br>
+effective c++ fuxi
+binary tree fuxi<br>
+
