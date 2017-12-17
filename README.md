@@ -45,4 +45,5 @@ BP的理解关键<br>
 Every time a variable is back propogated through, the gradient will be accumulated instead of being replaced. (This makes it easier for rnn, because each module will be back propogated through several times.)
 
 为什么pytorch backward需要加参数<br>
+jacobian<br>
 
