@@ -41,6 +41,8 @@ BP的理解关键<br>
 1.一个是矩阵求导是什么
 2.一个是链式反应
 
-为什么pytorch zero gradient
-为什么pytorch backward需要加参数
+为什么pytorch zero gradient<br> from pytorch forum
 Every time a variable is back propogated through, the gradient will be accumulated instead of being replaced. (This makes it easier for rnn, because each module will be back propogated through several times.)
+
+为什么pytorch backward需要加参数<br>
+
