@@ -8,3 +8,10 @@ https://medium.com/@erikhallstrm/work-remotely-with-pycharm-tensorflow-and-ssh-c
 1. configure python interpreter(deployment or SSH with key pair)
 2. set ENV in python console, add LD_LIBRARY
 3. configure automatic upload
+
+
+
+pytorch transform normalize ()  <br>
+normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                     std=[0.229, 0.224, 0.225])
+(ref  https://discuss.pytorch.org/t/how-to-preprocess-input-for-pre-trained-networks/683 )                                     
