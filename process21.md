@@ -23,3 +23,4 @@ for example a 10-class classification, batch_size 16.
 The input will be a matrix of [10, 16]
 the target will be a vector with only labels(no need to one hot encode) [16]
 This **crossEntroyLoss** criterion combines LogSoftMax and NLLLoss in one single class.
+<br>
