@@ -28,3 +28,8 @@ This **crossEntroyLoss** criterion combines LogSoftMax and NLLLoss in one single
 
 fine tuning <br>
 https://github.com/pytorch/examples/pull/58
+
+
+<br>
+weights initi<br>
+https://discuss.pytorch.org/t/weight-initilzation/157/3
