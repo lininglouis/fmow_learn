@@ -15,3 +15,11 @@ pytorch transform normalize ()  <br>
 normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                      std=[0.229, 0.224, 0.225])
 (ref  https://discuss.pytorch.org/t/how-to-preprocess-input-for-pre-trained-networks/683 )                                     
+
+
+pytorch crossEntroyLoss(input, target) <br>
+In a word: If you do multiple classifcation, you dont need to add a softmax or logsoftmax layer at the end of the network. Pytorch put this part of work to loss function crossEntroyLoss.
+for example a 10-class classification, batch_size 16.
+The input will be a matrix of [10, 16]
+the target will be a vector with only labels(no need to one hot encode) [16]
+This **crossEntroyLoss** criterion combines LogSoftMax and NLLLoss in one single class.
