@@ -1,0 +1,240 @@
+
+Home/Ladder/Algorithm
+
+1 - strStr & Coding Style 
+Required(1/1)Optional(2/3)Related(2/2)
+Easy13.strStr18%
+-------------------------------
+Medium18.Subsets II26%
+Medium17.Subsets26%
+Hard594.strStr II25%
+-------------------------------
+Medium16.Permutations II26%
+Medium15.Permutations28%
+
+
+2 - Binary Search 
+Required(9/9)Optional(2/8)Related(4/8)
+Easy459.Closest Number in Sorted Array35%
+Easy458.Last Position of Target36%
+Easy28.Search a 2D Matrix 28%
+Medium585.Maximum Number in Mountain Sequence45%
+Medium447.Search in a Big Sorted Array30%
+Medium159.Find Minimum in Rotated Sorted Array39%
+Medium75.Find Peak Element48%
+Medium74.First Bad Version34%
+Medium62.Search in Rotated Sorted Array30%
+-------------------------------
+Easy462.Total Occurrence of Target27%
+Easy254.Drop Eggs34%
+Easy14.First Position of Target33%
+Medium460.K Closest Numbers In Sorted Array23%
+Medium414.Divide Two Integers 17%
+Medium61.Search for a Range25%
+Medium38.Search a 2D Matrix II36%
+Hard600.Smallest Rectangle Enclosing Black Pixels26%
+-------------------------------
+Easy457.Classical Binary Search37%
+Easy141.Sqrt(x)25%
+Medium617.Maximum Average Subarray18%
+Medium586.Sqrt(x) II32%
+Medium160.Find Minimum in Rotated Sorted Array II34%
+Medium63.Search in Rotated Sorted Array II40%
+Hard437.Copy Books29%
+Hard183.Wood Cut24%
+
+
+3 - Binary Tree & Divide Conquer 
+Required(10/10)Optional(1/11)Related(2/2)
+Easy597.Subtree with Maximum Average26%
+Easy596.Minimum Subtree34%
+Easy480.Binary Tree Paths28%
+Easy453.Flatten Binary Tree to Linked List33%
+Easy97.Maximum Depth of Binary Tree53%
+Easy93.Balanced Binary Tree 38%
+Easy67.Binary Tree Inorder Traversal42%
+Easy66.Binary Tree Preorder Traversal42%
+Medium578.Lowest Common Ancestor III25%
+Medium95.Validate Binary Search Tree22%
+-------------------------------
+Easy595.Binary Tree Longest Consecutive Sequence32%
+Easy376.Binary Tree Path Sum21%
+Easy474.Lowest Common Ancestor II36%
+Easy246.Binary Tree Path Sum II27%
+Easy68.Binary Tree Postorder Traversal42%
+Medium619.Binary Tree Longest Consecutive Sequence III39%
+Medium614.Binary Tree Longest Consecutive Sequence II32%
+Medium475.Binary Tree Maximum Path Sum II44%
+Medium448.Inorder Successor in Binary Search Tree33%
+Medium378.Convert Binary Search Tree to Doubly Linked List30%
+Hard472.Binary Tree Path Sum III37%
+-------------------------------
+Easy155.Minimum Depth of Binary Tree31%
+Medium88.Lowest Common Ancestor40%
+
+
+
+4 - Breadth First Search 
+Required(10/10)Optional(0/6)Related(0/7)
+Easy433.Number of Islands25%
+Easy69.Binary Tree Level Order Traversal34%
+Medium616.Course Schedule II21%
+Medium618.Search Graph Nodes45%
+Medium611.Knight Shortest Path24%
+Medium598.Zombie in Matrix 29%
+Medium178.Graph Valid Tree27%
+Medium137.Clone Graph29%
+Medium7.Binary Tree Serialization22%
+Hard573.Build Post Office II28%
+-------------------------------
+Easy242.Convert Binary Tree to Linked Lists by Depth40%
+Medium624.Remove Substrings28%
+Medium605.Sequence Reconstruction18%
+Medium531.Six Degrees35%
+Medium127.Topological Sorting31%
+Medium120.Word Ladder22%
+-------------------------------
+Medium615.Course Schedule23%
+Medium431.Connected Component in Undirected Graph25%
+Medium71.Binary Tree Zigzag Level Order Traversal29%
+Medium70.Binary Tree Level Order Traversal II41%
+Hard600.Smallest Rectangle Enclosing Black Pixels26%
+Hard574.Build Post Office19%
+Hard434.Number of Islands II19%
+
+
+5 - Depth First Search 
+Required(7/7)Optional(0/4)Related(0/7)
+Medium136.Palindrome Partitioning28%
+Medium153.Combination Sum II30%
+Medium135.Combination Sum 28%
+Medium18.Subsets II26%
+Medium16.Permutations II26%
+Medium15.Permutations28%
+Hard121.Word Ladder II20%
+-------------------------------
+Medium120.Word Ladder22%
+Medium52.Next Permutation25%
+Medium51.Previous Permutation27%
+Hard582.Word Break II20%
+-------------------------------
+Easy211.String Permutation29%
+Easy197.Permutation Index30%
+Medium10.String Permutation II21%
+Medium190.Next Permutation II34%
+Medium198.Permutation Index II24%
+Medium107.Word Break14%
+Medium108.Palindrome Partitioning II23%
+
+
+6 - Linked List & Array 
+Required(10/10)Optional(2/6)Related(1/8)
+Easy599.Insert into a Cyclic Sorted List22%
+Easy165.Merge Two Sorted Lists39%
+Easy138.Subarray Sum31%
+Easy41.Maximum Subarray38%
+Medium139.Subarray Sum Closest21%
+Medium105.Copy List with Random Pointer34%
+Medium102.Linked List Cycle 45%
+Medium98.Sort List 30%
+Hard450.Reverse Nodes in k-Group35%
+Hard65.Median of two Sorted Arrays25%
+-------------------------------
+Easy548.Intersection of Two Arrays II23%
+Easy547.Intersection of Two Arrays24%
+Easy96.Partition List31%
+Easy64.Merge Sorted Array34%
+Easy6.Merge Two Sorted Arrays35%
+Hard103.Linked List Cycle II 37%
+-------------------------------
+Easy41.Maximum Subarray38%
+Medium620.Maximum Subarray IV35%
+Medium617.Maximum Average Subarray18%
+Medium191.Maximum Product Subarray 30%
+Medium45.Maximum Subarray Difference24%
+Medium42.Maximum Subarray II26%
+Hard621.Maximum Subarray V29%
+Hard43.Maximum Subarray III25%
+
+
+
+7 - Two Pointers 
+Required(10/10)Optional(0/11)Related(0/0)
+Easy607.Two Sum - Data structure design35%
+Easy521.Remove Duplicate Numbers in Array32%
+Medium608.Two Sum - Input array is sorted47%
+Medium609.Two Sum - Less than or equal to target39%
+Medium587.Two Sum - Unique pairs34%
+Medium533.Two Sum - Closest to target43%
+Medium148.Sort Colors36%
+Medium143.Sort Colors II34%
+Medium57.3Sum21%
+Medium31.Partition Array30%
+-------------------------------
+Easy604.Window Sum33%
+Easy539.Move Zeroes33%
+Easy415.Valid Palindrome24%
+Easy56.Two Sum28%
+Medium625.Partition Array II48%
+Medium610.Two Sum - Difference equals to target 26%
+Medium443.Two Sum - Greater than target38%
+Medium461.Kth Smallest Numbers in Unsorted Array34%
+Medium382.Triangle Count32%
+Medium59.3Sum Closest31%
+Medium58.4Sum22%
+-------------------------------
+Problem set is empty
+
+
+8 - Data Structure 
+Required(10/10)Optional(0/6)Related(0/7)
+Easy128.Hash Function21%
+Medium613.High Five31%
+Medium612.K Closest Points20%
+Medium606.Kth Largest Element II54%
+Medium544.Top k Largest Numbers35%
+Medium129.Rehashing31%
+Medium104.Merge k Sorted Lists 29%
+Medium4.Ugly Number II24%
+Hard594.strStr II25%
+Hard134.LRU Cache 22%
+-------------------------------
+Medium601.Flatten 2D Vector45%
+Medium545.Top k Largest Numbers II29%
+Medium486.Merge k Sorted Arrays27%
+Medium471.Top K Frequent Words19%
+Medium130.Heapify38%
+Medium124.Longest Consecutive Sequence35%
+-------------------------------
+Easy551.Nested List Weight Sum45%
+Easy494.Implement Stack by Two Queues32%
+Medium575.Expression Expand27%
+Medium541.Zigzag Iterator II33%
+Medium540.Zigzag Iterator44%
+Medium528.Flatten Nested List Iterator28%
+Hard24.LFU Cache19%
+
+
+
+9 - Dynamic Programming 
+Required(1/10)Optional(0/5)Related(0/2)
+Easy115.Unique Paths II29%
+Easy114.Unique Paths41%
+Easy111.Climbing Stairs31%
+Easy110.Minimum Path Sum 35%
+Easy109.Triangle26%
+Medium603.Largest Divisible Subset34%
+Medium611.Knight Shortest Path24%
+Medium513.Perfect Squares32%
+Medium116.Jump Game37%
+Medium76.Longest Increasing Subsequence30%
+-------------------------------
+Easy272.Climbing Stairs II39%
+Medium630.Knight Shortest Path II28%
+Medium117.Jump Game II35%
+Hard602.Russian Doll Envelopes19%
+Hard622.Frog Jump30%
+-------------------------------
+Easy254.Drop Eggs34%
+Medium584.Drop Eggs II40%
+ 
